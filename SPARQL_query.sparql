@@ -1,0 +1,30 @@
+
+
+4.
+
+1. What are the interested things in Sigiriya?
+
+Sparql query
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix tourism: <http://tourism.rdf#>
+SELECT?x ?y
+WHERE
+{
+?Place tourism:place_name 'Sigiriya'.
+?Place tourism:interest_in?x.
+?x tourism:attraction_type?y.
+}
+
+
+
+2.What are the places with open space?
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix tourism: <http://tourism.rdf#>
+SELECT?x ?y
+8
+WHERE
+{
+?Place tourism:attraction_type 'Open Space'.
+?Place tourism:can_find_in?x.
+?x tourism:place_name?y.
+}
