@@ -1,0 +1,1958 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://tourism.rdf#"
+     xml:base="http://tourism.rdf"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://tourism.rdf">
+        <owl:versionIRI rdf:resource="http://tourism.rdf"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://tourism.rdf#attractive_with -->
+
+    <owl:ObjectProperty rdf:about="http://tourism.rdf#attractive_with">
+        <rdfs:domain rdf:resource="http://tourism.rdf#Accomadation"/>
+        <rdfs:domain rdf:resource="http://tourism.rdf#Activity"/>
+        <rdfs:domain rdf:resource="http://tourism.rdf#Place"/>
+        <rdfs:domain rdf:resource="http://tourism.rdf#Resturant"/>
+        <rdfs:range rdf:resource="http://tourism.rdf#Attraction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tourism.rdf#can_find_in -->
+
+    <owl:ObjectProperty rdf:about="http://tourism.rdf#can_find_in">
+        <rdfs:domain rdf:resource="http://tourism.rdf#Attraction"/>
+        <rdfs:domain rdf:resource="http://tourism.rdf#Payment_method"/>
+        <rdfs:range rdf:resource="http://tourism.rdf#Accomadation"/>
+        <rdfs:range rdf:resource="http://tourism.rdf#Activity"/>
+        <rdfs:range rdf:resource="http://tourism.rdf#Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tourism.rdf#interest_in -->
+
+    <owl:ObjectProperty rdf:about="http://tourism.rdf#interest_in">
+        <rdfs:domain rdf:resource="http://tourism.rdf#Tourist_Group"/>
+        <rdfs:range rdf:resource="http://tourism.rdf#Activity"/>
+        <rdfs:range rdf:resource="http://tourism.rdf#Area"/>
+        <rdfs:range rdf:resource="http://tourism.rdf#Attraction"/>
+        <rdfs:range rdf:resource="http://tourism.rdf#Event"/>
+        <rdfs:range rdf:resource="http://tourism.rdf#Payment_method"/>
+        <rdfs:range rdf:resource="http://tourism.rdf#Place"/>
+        <rdfs:range rdf:resource="http://tourism.rdf#Resturant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tourism.rdf#like_to_attend -->
+
+    <owl:ObjectProperty rdf:about="http://tourism.rdf#like_to_attend">
+        <rdfs:domain rdf:resource="http://tourism.rdf#Tourist_Group"/>
+        <rdfs:range rdf:resource="http://tourism.rdf#Event"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tourism.rdf#like_to_do -->
+
+    <owl:ObjectProperty rdf:about="http://tourism.rdf#like_to_do">
+        <rdfs:domain rdf:resource="http://tourism.rdf#Tourist_Group"/>
+        <rdfs:range rdf:resource="http://tourism.rdf#Activity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tourism.rdf#like_to_go -->
+
+    <owl:ObjectProperty rdf:about="http://tourism.rdf#like_to_go">
+        <rdfs:domain rdf:resource="http://tourism.rdf#Tourist_Group"/>
+        <rdfs:range rdf:resource="http://tourism.rdf#Area"/>
+        <rdfs:range rdf:resource="http://tourism.rdf#Attraction"/>
+        <rdfs:range rdf:resource="http://tourism.rdf#Place"/>
+        <rdfs:range rdf:resource="http://tourism.rdf#Resturant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tourism.rdf#like_to_spend_time_with -->
+
+    <owl:ObjectProperty rdf:about="http://tourism.rdf#like_to_spend_time_with"/>
+    
+
+
+    <!-- http://tourism.rdf#like_to_stay_in -->
+
+    <owl:ObjectProperty rdf:about="http://tourism.rdf#like_to_stay_in">
+        <rdfs:domain rdf:resource="http://tourism.rdf#Tourist_Group"/>
+        <rdfs:range rdf:resource="http://tourism.rdf#Accomadation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tourism.rdf#like_to_test -->
+
+    <owl:ObjectProperty rdf:about="http://tourism.rdf#like_to_test">
+        <rdfs:domain rdf:resource="http://tourism.rdf#Tourist_Group"/>
+        <rdfs:range rdf:resource="http://tourism.rdf#Food"/>
+        <rdfs:range rdf:resource="http://tourism.rdf#Resturant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tourism.rdf#located_in -->
+
+    <owl:ObjectProperty rdf:about="http://tourism.rdf#located_in">
+        <rdfs:domain rdf:resource="http://tourism.rdf#Accomadation"/>
+        <rdfs:domain rdf:resource="http://tourism.rdf#Activity"/>
+        <rdfs:domain rdf:resource="http://tourism.rdf#Place"/>
+        <rdfs:range rdf:resource="http://tourism.rdf#Area"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tourism.rdf#payment_accept_with -->
+
+    <owl:ObjectProperty rdf:about="http://tourism.rdf#payment_accept_with">
+        <rdfs:domain rdf:resource="http://tourism.rdf#Accomadation"/>
+        <rdfs:domain rdf:resource="http://tourism.rdf#Activity"/>
+        <rdfs:domain rdf:resource="http://tourism.rdf#Attraction"/>
+        <rdfs:domain rdf:resource="http://tourism.rdf#Event"/>
+        <rdfs:domain rdf:resource="http://tourism.rdf#Place"/>
+        <rdfs:domain rdf:resource="http://tourism.rdf#Resturant"/>
+        <rdfs:range rdf:resource="http://tourism.rdf#Payment_method"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tourism.rdf#sourrounded_by -->
+
+    <owl:ObjectProperty rdf:about="http://tourism.rdf#sourrounded_by">
+        <rdfs:domain rdf:resource="http://tourism.rdf#Accomadation"/>
+        <rdfs:domain rdf:resource="http://tourism.rdf#Place"/>
+        <rdfs:domain rdf:resource="http://tourism.rdf#Resturant"/>
+        <rdfs:range rdf:resource="http://tourism.rdf#Attraction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tourism.rdf#willing_to_pay -->
+
+    <owl:ObjectProperty rdf:about="http://tourism.rdf#willing_to_pay">
+        <rdfs:domain rdf:resource="http://tourism.rdf#Tourist_Group"/>
+        <rdfs:range rdf:resource="http://tourism.rdf#Payment_method"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://tourism.rdf#adventure_type -->
+
+    <owl:DatatypeProperty rdf:about="http://tourism.rdf#adventure_type">
+        <rdfs:domain rdf:resource="http://tourism.rdf#Adventure"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tourism.rdf#amenities -->
+
+    <owl:DatatypeProperty rdf:about="http://tourism.rdf#amenities"/>
+    
+
+
+    <!-- http://tourism.rdf#apartment_type -->
+
+    <owl:DatatypeProperty rdf:about="http://tourism.rdf#apartment_type">
+        <rdfs:domain rdf:resource="http://tourism.rdf#Apartment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tourism.rdf#archaeology_type -->
+
+    <owl:DatatypeProperty rdf:about="http://tourism.rdf#archaeology_type">
+        <rdfs:domain rdf:resource="http://tourism.rdf#Archaeology"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tourism.rdf#area_name -->
+
+    <owl:DatatypeProperty rdf:about="http://tourism.rdf#area_name">
+        <rdfs:domain rdf:resource="http://tourism.rdf#Accomadation"/>
+        <rdfs:domain rdf:resource="http://tourism.rdf#Area"/>
+        <rdfs:domain rdf:resource="http://tourism.rdf#Place"/>
+        <rdfs:domain rdf:resource="http://tourism.rdf#Resturant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tourism.rdf#attraction_type -->
+
+    <owl:DatatypeProperty rdf:about="http://tourism.rdf#attraction_type">
+        <rdfs:domain rdf:resource="http://tourism.rdf#Attraction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tourism.rdf#bird_types -->
+
+    <owl:DatatypeProperty rdf:about="http://tourism.rdf#bird_types">
+        <rdfs:domain rdf:resource="http://tourism.rdf#Bird_watching"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tourism.rdf#bunglow_type -->
+
+    <owl:DatatypeProperty rdf:about="http://tourism.rdf#bunglow_type">
+        <rdfs:domain rdf:resource="http://tourism.rdf#Bungalow"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tourism.rdf#card_type -->
+
+    <owl:DatatypeProperty rdf:about="http://tourism.rdf#card_type"/>
+    
+
+
+    <!-- http://tourism.rdf#cash_type -->
+
+    <owl:DatatypeProperty rdf:about="http://tourism.rdf#cash_type"/>
+    
+
+
+    <!-- http://tourism.rdf#couple_type -->
+
+    <owl:DatatypeProperty rdf:about="http://tourism.rdf#couple_type">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tourism.rdf#creator_name -->
+
+    <owl:DatatypeProperty rdf:about="http://tourism.rdf#creator_name">
+        <rdfs:domain rdf:resource="http://tourism.rdf#Archaeology"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tourism.rdf#distance_from_colombo_city -->
+
+    <owl:DatatypeProperty rdf:about="http://tourism.rdf#distance_from_colombo_city">
+        <rdfs:domain rdf:resource="http://tourism.rdf#Accomadation"/>
+        <rdfs:domain rdf:resource="http://tourism.rdf#Resturant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tourism.rdf#entrance_fees -->
+
+    <owl:DatatypeProperty rdf:about="http://tourism.rdf#entrance_fees">
+        <rdfs:domain rdf:resource="http://tourism.rdf#Event"/>
+        <rdfs:domain rdf:resource="http://tourism.rdf#Place"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tourism.rdf#environment_view -->
+
+    <owl:DatatypeProperty rdf:about="http://tourism.rdf#environment_view">
+        <rdfs:domain rdf:resource="http://tourism.rdf#Accomadation"/>
+        <rdfs:domain rdf:resource="http://tourism.rdf#Place"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tourism.rdf#event_name -->
+
+    <owl:DatatypeProperty rdf:about="http://tourism.rdf#event_name">
+        <rdfs:domain rdf:resource="http://tourism.rdf#Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tourism.rdf#food_type -->
+
+    <owl:DatatypeProperty rdf:about="http://tourism.rdf#food_type">
+        <rdfs:domain rdf:resource="http://tourism.rdf#Food"/>
+        <rdfs:domain rdf:resource="http://tourism.rdf#Resturant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tourism.rdf#gaming_name -->
+
+    <owl:DatatypeProperty rdf:about="http://tourism.rdf#gaming_name">
+        <rdfs:domain rdf:resource="http://tourism.rdf#Gaming"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tourism.rdf#hotel_type -->
+
+    <owl:DatatypeProperty rdf:about="http://tourism.rdf#hotel_type">
+        <rdfs:domain rdf:resource="http://tourism.rdf#Hotel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tourism.rdf#humidity -->
+
+    <owl:DatatypeProperty rdf:about="http://tourism.rdf#humidity">
+        <rdfs:domain rdf:resource="http://tourism.rdf#Area"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tourism.rdf#location -->
+
+    <owl:DatatypeProperty rdf:about="http://tourism.rdf#location">
+        <rdfs:domain rdf:resource="http://tourism.rdf#Accomadation"/>
+        <rdfs:domain rdf:resource="http://tourism.rdf#Resturant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tourism.rdf#lodge_type -->
+
+    <owl:DatatypeProperty rdf:about="http://tourism.rdf#lodge_type">
+        <rdfs:domain rdf:resource="http://tourism.rdf#Lodge"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tourism.rdf#nature_attractions -->
+
+    <owl:DatatypeProperty rdf:about="http://tourism.rdf#nature_attractions"/>
+    
+
+
+    <!-- http://tourism.rdf#nature_type -->
+
+    <owl:DatatypeProperty rdf:about="http://tourism.rdf#nature_type"/>
+    
+
+
+    <!-- http://tourism.rdf#night_life_type -->
+
+    <owl:DatatypeProperty rdf:about="http://tourism.rdf#night_life_type">
+        <rdfs:domain rdf:resource="http://tourism.rdf#Night_life"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tourism.rdf#number_of_family_members -->
+
+    <owl:DatatypeProperty rdf:about="http://tourism.rdf#number_of_family_members">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tourism.rdf#number_of_friends -->
+
+    <owl:DatatypeProperty rdf:about="http://tourism.rdf#number_of_friends">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tourism.rdf#number_of_guests -->
+
+    <owl:DatatypeProperty rdf:about="http://tourism.rdf#number_of_guests">
+        <rdfs:domain rdf:resource="http://tourism.rdf#Apartment"/>
+        <rdfs:domain rdf:resource="http://tourism.rdf#Bungalow"/>
+        <rdfs:domain rdf:resource="http://tourism.rdf#Lodge"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tourism.rdf#number_of_rooms -->
+
+    <owl:DatatypeProperty rdf:about="http://tourism.rdf#number_of_rooms">
+        <rdfs:domain rdf:resource="http://tourism.rdf#Apartment"/>
+        <rdfs:domain rdf:resource="http://tourism.rdf#Bungalow"/>
+        <rdfs:domain rdf:resource="http://tourism.rdf#Lodge"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tourism.rdf#numer_of_children -->
+
+    <owl:DatatypeProperty rdf:about="http://tourism.rdf#numer_of_children">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tourism.rdf#payment_method -->
+
+    <owl:DatatypeProperty rdf:about="http://tourism.rdf#payment_method">
+        <rdfs:domain rdf:resource="http://tourism.rdf#Accomadation"/>
+        <rdfs:domain rdf:resource="http://tourism.rdf#Activity"/>
+        <rdfs:domain rdf:resource="http://tourism.rdf#Event"/>
+        <rdfs:domain rdf:resource="http://tourism.rdf#Resturant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tourism.rdf#place_name -->
+
+    <owl:DatatypeProperty rdf:about="http://tourism.rdf#place_name">
+        <rdfs:domain rdf:resource="http://tourism.rdf#Accomadation"/>
+        <rdfs:domain rdf:resource="http://tourism.rdf#Activity"/>
+        <rdfs:domain rdf:resource="http://tourism.rdf#Event"/>
+        <rdfs:domain rdf:resource="http://tourism.rdf#Place"/>
+        <rdfs:domain rdf:resource="http://tourism.rdf#Resturant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tourism.rdf#preferable_time -->
+
+    <owl:DatatypeProperty rdf:about="http://tourism.rdf#preferable_time">
+        <rdfs:domain rdf:resource="http://tourism.rdf#Activity"/>
+        <rdfs:domain rdf:resource="http://tourism.rdf#Place"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tourism.rdf#price_range -->
+
+    <owl:DatatypeProperty rdf:about="http://tourism.rdf#price_range">
+        <rdfs:domain rdf:resource="http://tourism.rdf#Price"/>
+        <rdfs:domain rdf:resource="http://tourism.rdf#Resturant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tourism.rdf#province -->
+
+    <owl:DatatypeProperty rdf:about="http://tourism.rdf#province">
+        <rdfs:domain rdf:resource="http://tourism.rdf#Accomadation"/>
+        <rdfs:domain rdf:resource="http://tourism.rdf#Area"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tourism.rdf#religious_type -->
+
+    <owl:DatatypeProperty rdf:about="http://tourism.rdf#religious_type">
+        <rdfs:domain rdf:resource="http://tourism.rdf#Archaeology"/>
+        <rdfs:domain rdf:resource="http://tourism.rdf#Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tourism.rdf#resturant_name -->
+
+    <owl:DatatypeProperty rdf:about="http://tourism.rdf#resturant_name">
+        <rdfs:domain rdf:resource="http://tourism.rdf#Resturant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tourism.rdf#room_type -->
+
+    <owl:DatatypeProperty rdf:about="http://tourism.rdf#room_type">
+        <rdfs:domain rdf:resource="http://tourism.rdf#Accomadation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tourism.rdf#shopping_type -->
+
+    <owl:DatatypeProperty rdf:about="http://tourism.rdf#shopping_type">
+        <rdfs:domain rdf:resource="http://tourism.rdf#Shopping"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tourism.rdf#shoppping_center_name -->
+
+    <owl:DatatypeProperty rdf:about="http://tourism.rdf#shoppping_center_name">
+        <rdfs:domain rdf:resource="http://tourism.rdf#Shopping"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tourism.rdf#solo_gender_type -->
+
+    <owl:DatatypeProperty rdf:about="http://tourism.rdf#solo_gender_type">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tourism.rdf#tempreature -->
+
+    <owl:DatatypeProperty rdf:about="http://tourism.rdf#tempreature">
+        <rdfs:domain rdf:resource="http://tourism.rdf#Area"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tourism.rdf#tourist_type -->
+
+    <owl:DatatypeProperty rdf:about="http://tourism.rdf#tourist_type">
+        <rdfs:domain rdf:resource="http://tourism.rdf#Tourist_Group"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tourism.rdf#transportation_type -->
+
+    <owl:DatatypeProperty rdf:about="http://tourism.rdf#transportation_type">
+        <rdfs:domain rdf:resource="http://tourism.rdf#Area"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tourism.rdf#wild_life_places -->
+
+    <owl:DatatypeProperty rdf:about="http://tourism.rdf#wild_life_places">
+        <rdfs:domain rdf:resource="http://tourism.rdf#Wild_life"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://tourism.rdf#Accomadation -->
+
+    <owl:Class rdf:about="http://tourism.rdf#Accomadation"/>
+    
+
+
+    <!-- http://tourism.rdf#Activity -->
+
+    <owl:Class rdf:about="http://tourism.rdf#Activity"/>
+    
+
+
+    <!-- http://tourism.rdf#Adventure -->
+
+    <owl:Class rdf:about="http://tourism.rdf#Adventure">
+        <rdfs:subClassOf rdf:resource="http://tourism.rdf#Activity"/>
+        <owl:disjointWith rdf:resource="http://tourism.rdf#Bird_watching"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tourism.rdf#Apartment -->
+
+    <owl:Class rdf:about="http://tourism.rdf#Apartment">
+        <rdfs:subClassOf rdf:resource="http://tourism.rdf#Accomadation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tourism.rdf#Archaeology -->
+
+    <owl:Class rdf:about="http://tourism.rdf#Archaeology">
+        <rdfs:subClassOf rdf:resource="http://tourism.rdf#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tourism.rdf#Area -->
+
+    <owl:Class rdf:about="http://tourism.rdf#Area"/>
+    
+
+
+    <!-- http://tourism.rdf#Attraction -->
+
+    <owl:Class rdf:about="http://tourism.rdf#Attraction"/>
+    
+
+
+    <!-- http://tourism.rdf#Average -->
+
+    <owl:Class rdf:about="http://tourism.rdf#Average">
+        <rdfs:subClassOf rdf:resource="http://tourism.rdf#Price"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tourism.rdf#Bird_watching -->
+
+    <owl:Class rdf:about="http://tourism.rdf#Bird_watching">
+        <rdfs:subClassOf rdf:resource="http://tourism.rdf#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tourism.rdf#Bungalow -->
+
+    <owl:Class rdf:about="http://tourism.rdf#Bungalow">
+        <rdfs:subClassOf rdf:resource="http://tourism.rdf#Accomadation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tourism.rdf#Card -->
+
+    <owl:Class rdf:about="http://tourism.rdf#Card">
+        <rdfs:subClassOf rdf:resource="http://tourism.rdf#Payment_method"/>
+        <owl:disjointWith rdf:resource="http://tourism.rdf#Cash"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tourism.rdf#Cash -->
+
+    <owl:Class rdf:about="http://tourism.rdf#Cash">
+        <rdfs:subClassOf rdf:resource="http://tourism.rdf#Payment_method"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tourism.rdf#Chineese -->
+
+    <owl:Class rdf:about="http://tourism.rdf#Chineese">
+        <rdfs:subClassOf rdf:resource="http://tourism.rdf#Resturant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tourism.rdf#Colombo -->
+
+    <owl:Class rdf:about="http://tourism.rdf#Colombo">
+        <rdfs:subClassOf rdf:resource="http://tourism.rdf#Area"/>
+        <owl:disjointWith rdf:resource="http://tourism.rdf#Out_of_Colombo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tourism.rdf#Cultural_event -->
+
+    <owl:Class rdf:about="http://tourism.rdf#Cultural_event">
+        <rdfs:subClassOf rdf:resource="http://tourism.rdf#Event"/>
+        <owl:disjointWith rdf:resource="http://tourism.rdf#Non_Cultural_event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tourism.rdf#Event -->
+
+    <owl:Class rdf:about="http://tourism.rdf#Event"/>
+    
+
+
+    <!-- http://tourism.rdf#Food -->
+
+    <owl:Class rdf:about="http://tourism.rdf#Food">
+        <rdfs:subClassOf rdf:resource="http://tourism.rdf#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tourism.rdf#Free -->
+
+    <owl:Class rdf:about="http://tourism.rdf#Free">
+        <rdfs:subClassOf rdf:resource="http://tourism.rdf#Price"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tourism.rdf#Gaming -->
+
+    <owl:Class rdf:about="http://tourism.rdf#Gaming">
+        <rdfs:subClassOf rdf:resource="http://tourism.rdf#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tourism.rdf#High -->
+
+    <owl:Class rdf:about="http://tourism.rdf#High">
+        <rdfs:subClassOf rdf:resource="http://tourism.rdf#Price"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tourism.rdf#Hotel -->
+
+    <owl:Class rdf:about="http://tourism.rdf#Hotel">
+        <rdfs:subClassOf rdf:resource="http://tourism.rdf#Accomadation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tourism.rdf#Indian -->
+
+    <owl:Class rdf:about="http://tourism.rdf#Indian">
+        <rdfs:subClassOf rdf:resource="http://tourism.rdf#Resturant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tourism.rdf#International_food_chain -->
+
+    <owl:Class rdf:about="http://tourism.rdf#International_food_chain">
+        <rdfs:subClassOf rdf:resource="http://tourism.rdf#Resturant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tourism.rdf#Local -->
+
+    <owl:Class rdf:about="http://tourism.rdf#Local">
+        <rdfs:subClassOf rdf:resource="http://tourism.rdf#Resturant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tourism.rdf#Lodge -->
+
+    <owl:Class rdf:about="http://tourism.rdf#Lodge">
+        <rdfs:subClassOf rdf:resource="http://tourism.rdf#Accomadation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tourism.rdf#Low -->
+
+    <owl:Class rdf:about="http://tourism.rdf#Low">
+        <rdfs:subClassOf rdf:resource="http://tourism.rdf#Price"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tourism.rdf#Nature -->
+
+    <owl:Class rdf:about="http://tourism.rdf#Nature">
+        <rdfs:subClassOf rdf:resource="http://tourism.rdf#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tourism.rdf#Night_life -->
+
+    <owl:Class rdf:about="http://tourism.rdf#Night_life">
+        <rdfs:subClassOf rdf:resource="http://tourism.rdf#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tourism.rdf#Non_Cultural_event -->
+
+    <owl:Class rdf:about="http://tourism.rdf#Non_Cultural_event">
+        <rdfs:subClassOf rdf:resource="http://tourism.rdf#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tourism.rdf#Out_of_Colombo -->
+
+    <owl:Class rdf:about="http://tourism.rdf#Out_of_Colombo">
+        <rdfs:subClassOf rdf:resource="http://tourism.rdf#Area"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tourism.rdf#Payment_method -->
+
+    <owl:Class rdf:about="http://tourism.rdf#Payment_method"/>
+    
+
+
+    <!-- http://tourism.rdf#Place -->
+
+    <owl:Class rdf:about="http://tourism.rdf#Place"/>
+    
+
+
+    <!-- http://tourism.rdf#Price -->
+
+    <owl:Class rdf:about="http://tourism.rdf#Price"/>
+    
+
+
+    <!-- http://tourism.rdf#Religious -->
+
+    <owl:Class rdf:about="http://tourism.rdf#Religious">
+        <rdfs:subClassOf rdf:resource="http://tourism.rdf#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tourism.rdf#Resturant -->
+
+    <owl:Class rdf:about="http://tourism.rdf#Resturant"/>
+    
+
+
+    <!-- http://tourism.rdf#Shopping -->
+
+    <owl:Class rdf:about="http://tourism.rdf#Shopping">
+        <rdfs:subClassOf rdf:resource="http://tourism.rdf#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tourism.rdf#Tourist_Group -->
+
+    <owl:Class rdf:about="http://tourism.rdf#Tourist_Group"/>
+    
+
+
+    <!-- http://tourism.rdf#Wild_life -->
+
+    <owl:Class rdf:about="http://tourism.rdf#Wild_life">
+        <rdfs:subClassOf rdf:resource="http://tourism.rdf#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tourism.rdf#Wild_life_photography -->
+
+    <owl:Class rdf:about="http://tourism.rdf#Wild_life_photography">
+        <rdfs:subClassOf rdf:resource="http://tourism.rdf#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://tourism.rdf#adventure_1 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#adventure_1">
+        <rdf:type rdf:resource="http://tourism.rdf#Adventure"/>
+        <adventure_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hiking</adventure_type>
+        <area_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matale</area_name>
+        <distance_from_colombo_city rdf:datatype="http://www.w3.org/2001/XMLSchema#string">170km</distance_from_colombo_city>
+        <place_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Knuckels Range</place_name>
+        <province rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Central</province>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#adventure_2 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#adventure_2">
+        <rdf:type rdf:resource="http://tourism.rdf#Adventure"/>
+        <adventure_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Diving</adventure_type>
+        <adventure_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Surfing</adventure_type>
+        <area_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ampara</area_name>
+        <distance_from_colombo_city rdf:datatype="http://www.w3.org/2001/XMLSchema#string">315km</distance_from_colombo_city>
+        <place_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arugam Bay</place_name>
+        <province rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eastern</province>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#adventure_3 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#adventure_3">
+        <rdf:type rdf:resource="http://tourism.rdf#Adventure"/>
+        <adventure_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rock Climbing</adventure_type>
+        <area_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kalupahana</area_name>
+        <distance_from_colombo_city rdf:datatype="http://www.w3.org/2001/XMLSchema#string">175km</distance_from_colombo_city>
+        <place_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bambarakanda waterfall</place_name>
+        <province rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Uva</province>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#adventure_4 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#adventure_4">
+        <rdf:type rdf:resource="http://tourism.rdf#Adventure"/>
+        <adventure_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Whale Watching</adventure_type>
+        <distance_from_colombo_city rdf:datatype="http://www.w3.org/2001/XMLSchema#string">151km</distance_from_colombo_city>
+        <place_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mirissa</place_name>
+        <province rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Southern</province>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#adventure_5 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#adventure_5">
+        <rdf:type rdf:resource="http://tourism.rdf#Adventure"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#apartment_1 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#apartment_1">
+        <rdf:type rdf:resource="http://tourism.rdf#Apartment"/>
+        <located_in rdf:resource="http://tourism.rdf#colombo_3"/>
+        <payment_accept_with rdf:resource="http://tourism.rdf#card_1"/>
+        <payment_accept_with rdf:resource="http://tourism.rdf#card_2"/>
+        <payment_accept_with rdf:resource="http://tourism.rdf#cash_2"/>
+        <amenities rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gym</amenities>
+        <amenities rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kitchen</amenities>
+        <amenities rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wifi</amenities>
+        <apartment_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Luxury</apartment_type>
+        <area_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Colombo 3</area_name>
+        <distance_from_colombo_city rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2km</distance_from_colombo_city>
+        <environment_view rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sea</environment_view>
+        <number_of_guests rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8</number_of_guests>
+        <number_of_rooms rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3</number_of_rooms>
+        <place_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cosy &amp; Sea</place_name>
+        <province rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Western</province>
+        <room_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Family</room_type>
+        <room_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Single</room_type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#apartment_2 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#apartment_2">
+        <rdf:type rdf:resource="http://tourism.rdf#Apartment"/>
+        <amenities rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kitchen</amenities>
+        <amenities rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wifi</amenities>
+        <apartment_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Semi-Luxury</apartment_type>
+        <area_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Colombo 4</area_name>
+        <distance_from_colombo_city rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2km</distance_from_colombo_city>
+        <environment_view rdf:datatype="http://www.w3.org/2001/XMLSchema#string">City</environment_view>
+        <number_of_guests rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4</number_of_guests>
+        <number_of_rooms rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2</number_of_rooms>
+        <place_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Colombo Comfort</place_name>
+        <province rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Western</province>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#apartment_3 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#apartment_3">
+        <rdf:type rdf:resource="http://tourism.rdf#Apartment"/>
+        <amenities rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kitchen</amenities>
+        <amenities rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wifi</amenities>
+        <apartment_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Luxury</apartment_type>
+        <area_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Colombo 3</area_name>
+        <distance_from_colombo_city rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1km</distance_from_colombo_city>
+        <number_of_guests rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</number_of_guests>
+        <number_of_rooms rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3</number_of_rooms>
+        <place_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocen Colombo</place_name>
+        <province rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Western</province>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#apartment_4 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#apartment_4">
+        <rdf:type rdf:resource="http://tourism.rdf#Apartment"/>
+        <amenities rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kitchen</amenities>
+        <apartment_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Semi-Luxury</apartment_type>
+        <area_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kandy</area_name>
+        <distance_from_colombo_city rdf:datatype="http://www.w3.org/2001/XMLSchema#string">170km</distance_from_colombo_city>
+        <environment_view rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Higlands</environment_view>
+        <number_of_guests rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4</number_of_guests>
+        <number_of_rooms rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2</number_of_rooms>
+        <place_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SafeHaven Home Stay</place_name>
+        <room_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></room_type>
+        <room_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Double</room_type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#apartment_5 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#apartment_5">
+        <rdf:type rdf:resource="http://tourism.rdf#Apartment"/>
+        <amenities rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kitchen</amenities>
+        <apartment_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Luxury</apartment_type>
+        <area_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mount Lavinia</area_name>
+        <distance_from_colombo_city rdf:datatype="http://www.w3.org/2001/XMLSchema#string">14km</distance_from_colombo_city>
+        <environment_view rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sea</environment_view>
+        <number_of_guests rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5</number_of_guests>
+        <number_of_rooms rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3</number_of_rooms>
+        <place_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Light &amp; Air</place_name>
+        <room_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Double</room_type>
+        <room_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Single</room_type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#archaeology_1 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#archaeology_1">
+        <rdf:type rdf:resource="http://tourism.rdf#Archaeology"/>
+        <interest_in rdf:resource="http://tourism.rdf#attraction_8"/>
+        <located_in rdf:resource="http://tourism.rdf#out_of_colombo_3"/>
+        <archaeology_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rock Fortress</archaeology_type>
+        <area_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dambulla</area_name>
+        <creator_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">King Kashyapa</creator_name>
+        <place_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sigiriya</place_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#archaeology_10 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#archaeology_10">
+        <rdf:type rdf:resource="http://tourism.rdf#Archaeology"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#archaeology_2 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#archaeology_2">
+        <rdf:type rdf:resource="http://tourism.rdf#Archaeology"/>
+        <located_in rdf:resource="http://tourism.rdf#colombo_8"/>
+        <archaeology_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Temple</archaeology_type>
+        <area_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Borelasgamuwa</area_name>
+        <area_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dehiwala</area_name>
+        <place_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bellanwila Raja Maha Viharaya</place_name>
+        <religious_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Buddhist</religious_type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#archaeology_3 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#archaeology_3">
+        <rdf:type rdf:resource="http://tourism.rdf#Archaeology"/>
+        <interest_in rdf:resource="http://tourism.rdf#attraction_9"/>
+        <located_in rdf:resource="http://tourism.rdf#colombo_1"/>
+        <archaeology_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Museum</archaeology_type>
+        <area_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Colombo Fort</area_name>
+        <place_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Colombo Dutch Museum</place_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#archaeology_4 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#archaeology_4">
+        <rdf:type rdf:resource="http://tourism.rdf#Archaeology"/>
+        <archaeology_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Temple</archaeology_type>
+        <place_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kelaniya Raja Maha Viharaya</place_name>
+        <religious_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Buddhist</religious_type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#archaeology_5 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#archaeology_5">
+        <rdf:type rdf:resource="http://tourism.rdf#Archaeology"/>
+        <archaeology_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Simamalaka</archaeology_type>
+        <place_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Simamalaka</place_name>
+        <religious_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Buddhist</religious_type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#archaeology_6 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#archaeology_6">
+        <rdf:type rdf:resource="http://tourism.rdf#Archaeology"/>
+        <archaeology_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Church</archaeology_type>
+        <place_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">St. Lucia’s Cathedral</place_name>
+        <religious_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Catholic</religious_type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#archaeology_7 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#archaeology_7">
+        <rdf:type rdf:resource="http://tourism.rdf#Archaeology"/>
+        <archaeology_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Monument</archaeology_type>
+        <entrance_fees rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Free</entrance_fees>
+        <place_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Independence Square</place_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#archaeology_8 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#archaeology_8">
+        <rdf:type rdf:resource="http://tourism.rdf#Archaeology"/>
+        <archaeology_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mosque</archaeology_type>
+        <place_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jami Ul-Alfar Mosque</place_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#archaeology_9 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#archaeology_9">
+        <rdf:type rdf:resource="http://tourism.rdf#Archaeology"/>
+        <archaeology_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lighthouse</archaeology_type>
+        <place_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Old Galle Buck Lighthouse</place_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#area_1 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#area_1">
+        <rdf:type rdf:resource="http://tourism.rdf#Colombo"/>
+        <area_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kelaniya</area_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#attraction_1 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#attraction_1">
+        <rdf:type rdf:resource="http://tourism.rdf#Attraction"/>
+        <attraction_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Highlands</attraction_type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#attraction_2 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#attraction_2">
+        <rdf:type rdf:resource="http://tourism.rdf#Attraction"/>
+        <can_find_in rdf:resource="http://tourism.rdf#archaeology_2"/>
+        <can_find_in rdf:resource="http://tourism.rdf#nature_1"/>
+        <attraction_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Open Space</attraction_type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#attraction_3 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#attraction_3">
+        <rdf:type rdf:resource="http://tourism.rdf#Attraction"/>
+        <attraction_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Grassland</attraction_type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#attraction_4 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#attraction_4">
+        <rdf:type rdf:resource="http://tourism.rdf#Attraction"/>
+        <attraction_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3D Arts</attraction_type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#attraction_5 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#attraction_5">
+        <rdf:type rdf:resource="http://tourism.rdf#Attraction"/>
+        <attraction_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SunSet</attraction_type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#attraction_6 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#attraction_6">
+        <rdf:type rdf:resource="http://tourism.rdf#Attraction"/>
+        <attraction_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Walking Trails</attraction_type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#attraction_7 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#attraction_7">
+        <rdf:type rdf:resource="http://tourism.rdf#Attraction"/>
+        <attraction_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relaxing</attraction_type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#attraction_8 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#attraction_8">
+        <rdf:type rdf:resource="http://tourism.rdf#Attraction"/>
+        <attraction_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Frescoes Painting</attraction_type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#attraction_9 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#attraction_9">
+        <rdf:type rdf:resource="http://tourism.rdf#Attraction"/>
+        <attraction_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dutch Architecture</attraction_type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#bird_watching_1 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#bird_watching_1">
+        <rdf:type rdf:resource="http://tourism.rdf#Bird_watching"/>
+        <area_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Boralasgamuwa</area_name>
+        <bird_types rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Endemic Water Birds</bird_types>
+        <bird_types rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Migratory Birds</bird_types>
+        <distance_from_colombo_city rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12km</distance_from_colombo_city>
+        <place_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Attidiya Bird Sanctuary</place_name>
+        <province rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Western</province>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#bird_watching_2 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#bird_watching_2">
+        <rdf:type rdf:resource="http://tourism.rdf#Bird_watching"/>
+        <area_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ampara</area_name>
+        <bird_types rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Endemic</bird_types>
+        <bird_types rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Migratory</bird_types>
+        <bird_types rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Resident</bird_types>
+        <distance_from_colombo_city rdf:datatype="http://www.w3.org/2001/XMLSchema#string">205km</distance_from_colombo_city>
+        <place_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kumana National Park</place_name>
+        <province rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eastern</province>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#bird_watching_3 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#bird_watching_3">
+        <rdf:type rdf:resource="http://tourism.rdf#Bird_watching"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#bunglow_1 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#bunglow_1">
+        <rdf:type rdf:resource="http://tourism.rdf#Bungalow"/>
+        <area_name>Colombo 2</area_name>
+        <bunglow_type>luxury</bunglow_type>
+        <distance_from_colombo_city rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5km</distance_from_colombo_city>
+        <environment_view>sea</environment_view>
+        <number_of_guests rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8</number_of_guests>
+        <number_of_rooms rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3</number_of_rooms>
+        <place_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Villa Raha</place_name>
+        <room_type>family</room_type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#bunglow_2 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#bunglow_2">
+        <rdf:type rdf:resource="http://tourism.rdf#Bungalow"/>
+        <area_name>Kandy</area_name>
+        <bunglow_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Luxury</bunglow_type>
+        <distance_from_colombo_city rdf:datatype="http://www.w3.org/2001/XMLSchema#string">150km</distance_from_colombo_city>
+        <environment_view rdf:datatype="http://www.w3.org/2001/XMLSchema#string">higlands</environment_view>
+        <humidity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">57%</humidity>
+        <number_of_guests rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12</number_of_guests>
+        <number_of_rooms rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5</number_of_rooms>
+        <place_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tropical Cube</place_name>
+        <province rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Central</province>
+        <room_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Familiy</room_type>
+        <tempreature rdf:datatype="http://www.w3.org/2001/XMLSchema#string">27</tempreature>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#bunglow_4 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#bunglow_4">
+        <rdf:type rdf:resource="http://tourism.rdf#Bungalow"/>
+        <area_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Havelok</area_name>
+        <bunglow_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Luxury</bunglow_type>
+        <distance_from_colombo_city rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5km</distance_from_colombo_city>
+        <number_of_guests rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10</number_of_guests>
+        <number_of_rooms rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3</number_of_rooms>
+        <place_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Colombo View</place_name>
+        <room_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Couple</room_type>
+        <room_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Familiy</room_type>
+        <tempreature rdf:datatype="http://www.w3.org/2001/XMLSchema#string">28</tempreature>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#bunglow_5 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#bunglow_5">
+        <rdf:type rdf:resource="http://tourism.rdf#Bungalow"/>
+        <area_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Colombo 5</area_name>
+        <bunglow_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Luxury</bunglow_type>
+        <distance_from_colombo_city rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4km</distance_from_colombo_city>
+        <number_of_guests rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4</number_of_guests>
+        <number_of_rooms rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2</number_of_rooms>
+        <place_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Moon Villa</place_name>
+        <province rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Western</province>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#bunglow__3 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#bunglow__3">
+        <rdf:type rdf:resource="http://tourism.rdf#Bungalow"/>
+        <area_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Colombo 2</area_name>
+        <bunglow_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Semi-Luxury</bunglow_type>
+        <distance_from_colombo_city rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1km</distance_from_colombo_city>
+        <environment_view rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sea</environment_view>
+        <humidity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">65%</humidity>
+        <number_of_guests rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</number_of_guests>
+        <number_of_rooms rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3</number_of_rooms>
+        <place_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Home Safe</place_name>
+        <province rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Western</province>
+        <tempreature rdf:datatype="http://www.w3.org/2001/XMLSchema#string">29</tempreature>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#card_1 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#card_1">
+        <rdf:type rdf:resource="http://tourism.rdf#Card"/>
+        <card_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Credit</card_type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#card_2 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#card_2">
+        <rdf:type rdf:resource="http://tourism.rdf#Card"/>
+        <card_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Debit</card_type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#cash_1 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#cash_1">
+        <rdf:type rdf:resource="http://tourism.rdf#Cash"/>
+        <cash_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">USD</cash_type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#cash_2 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#cash_2">
+        <rdf:type rdf:resource="http://tourism.rdf#Cash"/>
+        <cash_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SL Rupees</cash_type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#colombo_1 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#colombo_1">
+        <rdf:type rdf:resource="http://tourism.rdf#Colombo"/>
+        <area_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Colombo Fort</area_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#colombo_2 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#colombo_2">
+        <rdf:type rdf:resource="http://tourism.rdf#Colombo"/>
+        <area_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Slave Island</area_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#colombo_3 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#colombo_3">
+        <rdf:type rdf:resource="http://tourism.rdf#Colombo"/>
+        <area_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kollupitiya</area_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#colombo_4 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#colombo_4">
+        <rdf:type rdf:resource="http://tourism.rdf#Colombo"/>
+        <area_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bambalapitiya</area_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#colombo_5 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#colombo_5">
+        <rdf:type rdf:resource="http://tourism.rdf#Colombo"/>
+        <area_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kirulapana</area_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#colombo_6 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#colombo_6">
+        <rdf:type rdf:resource="http://tourism.rdf#Colombo"/>
+        <area_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wellawatta</area_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#colombo_7 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#colombo_7">
+        <rdf:type rdf:resource="http://tourism.rdf#Colombo"/>
+        <area_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Havelock</area_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#colombo_8 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#colombo_8">
+        <rdf:type rdf:resource="http://tourism.rdf#Colombo"/>
+        <area_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Borelasgamuwa</area_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#food_1 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#food_1">
+        <rdf:type rdf:resource="http://tourism.rdf#Food"/>
+        <food_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Local Eateries</food_type>
+        <place_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Galle Face Green</place_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#food_2 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#food_2">
+        <rdf:type rdf:resource="http://tourism.rdf#Food"/>
+        <area_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Colombo 3</area_name>
+        <food_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chineese</food_type>
+        <food_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Local</food_type>
+        <place_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chineese Dragon Cafe</place_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#food_3 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#food_3">
+        <rdf:type rdf:resource="http://tourism.rdf#Food"/>
+        <area_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wellawatta</area_name>
+        <food_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Indian</food_type>
+        <place_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shanmugas</place_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#food_4 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#food_4">
+        <rdf:type rdf:resource="http://tourism.rdf#Food"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#food_5 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#food_5">
+        <rdf:type rdf:resource="http://tourism.rdf#Food"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#gaming_1 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#gaming_1">
+        <rdf:type rdf:resource="http://tourism.rdf#Gaming"/>
+        <area_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Colombo 01</area_name>
+        <distance_from_colombo_city rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1km</distance_from_colombo_city>
+        <entrance_fees rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Free</entrance_fees>
+        <gaming_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Live Betting</gaming_name>
+        <gaming_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Roulette</gaming_name>
+        <gaming_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Table Games</gaming_name>
+        <place_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bally&apos;s Casino</place_name>
+        <province rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Western</province>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#gaming_2 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#gaming_2">
+        <rdf:type rdf:resource="http://tourism.rdf#Gaming"/>
+        <area_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bambalapitiya</area_name>
+        <distance_from_colombo_city rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5km</distance_from_colombo_city>
+        <gaming_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Slot Machines</gaming_name>
+        <gaming_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Table Games</gaming_name>
+        <place_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Casino Marina</place_name>
+        <province rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Western</province>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#gaming_3 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#gaming_3">
+        <rdf:type rdf:resource="http://tourism.rdf#Gaming"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#gaming_4 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#gaming_4">
+        <rdf:type rdf:resource="http://tourism.rdf#Gaming"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#hotel_1 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#hotel_1">
+        <rdf:type rdf:resource="http://tourism.rdf#Hotel"/>
+        <amenities rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gym</amenities>
+        <amenities rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kitchen</amenities>
+        <amenities rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wifi</amenities>
+        <area_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Colombo 3</area_name>
+        <distance_from_colombo_city rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.5km</distance_from_colombo_city>
+        <environment_view rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sea</environment_view>
+        <hotel_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-Star</hotel_type>
+        <place_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cinnomon Grand</place_name>
+        <room_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Double</room_type>
+        <room_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Executive</room_type>
+        <room_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Family</room_type>
+        <room_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Single</room_type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#hotel_2 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#hotel_2">
+        <rdf:type rdf:resource="http://tourism.rdf#Hotel"/>
+        <amenities rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gym</amenities>
+        <amenities rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wifi</amenities>
+        <distance_from_colombo_city rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1km</distance_from_colombo_city>
+        <environment_view rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sea</environment_view>
+        <hotel_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-Star</hotel_type>
+        <place_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hilton</place_name>
+        <province rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Western</province>
+        <room_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Double</room_type>
+        <room_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Family</room_type>
+        <room_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Luxury</room_type>
+        <room_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Semi-Luxury</room_type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#hotel_3 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#hotel_3">
+        <rdf:type rdf:resource="http://tourism.rdf#Hotel"/>
+        <amenities rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wifi</amenities>
+        <area_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wellawatta</area_name>
+        <distance_from_colombo_city rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5km</distance_from_colombo_city>
+        <environment_view rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sea</environment_view>
+        <hotel_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3-Star</hotel_type>
+        <place_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fair View</place_name>
+        <room_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Double</room_type>
+        <room_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Family</room_type>
+        <room_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Single</room_type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#hotel_4 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#hotel_4">
+        <rdf:type rdf:resource="http://tourism.rdf#Hotel"/>
+        <amenities rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wifi</amenities>
+        <area_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wellawatta</area_name>
+        <distance_from_colombo_city rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5km</distance_from_colombo_city>
+        <environment_view rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sea</environment_view>
+        <hotel_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4-Star</hotel_type>
+        <place_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ozo</place_name>
+        <province rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Western</province>
+        <room_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Double</room_type>
+        <room_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Family</room_type>
+        <room_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Single</room_type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#hotel_5 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#hotel_5">
+        <rdf:type rdf:resource="http://tourism.rdf#Hotel"/>
+        <amenities rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wifi</amenities>
+        <area_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kandy</area_name>
+        <distance_from_colombo_city rdf:datatype="http://www.w3.org/2001/XMLSchema#string">115km</distance_from_colombo_city>
+        <hotel_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3-Star</hotel_type>
+        <place_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Queens&apos;s Hotel</place_name>
+        <room_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Double</room_type>
+        <room_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Family</room_type>
+        <room_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Single</room_type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#hotel_6 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#hotel_6">
+        <rdf:type rdf:resource="http://tourism.rdf#Hotel"/>
+        <amenities rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wifi</amenities>
+        <area_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Colombo 2</area_name>
+        <hotel_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Budget</hotel_type>
+        <place_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hotel J</place_name>
+        <province rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Western</province>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#lodge_1 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#lodge_1">
+        <rdf:type rdf:resource="http://tourism.rdf#Lodge"/>
+        <area_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kollupitya</area_name>
+        <distance_from_colombo_city rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3km</distance_from_colombo_city>
+        <lodge_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Luxury</lodge_type>
+        <number_of_rooms rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3</number_of_rooms>
+        <place_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lake Lodge</place_name>
+        <room_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Family</room_type>
+        <room_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Single</room_type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#lodge_2 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#lodge_2">
+        <rdf:type rdf:resource="http://tourism.rdf#Lodge"/>
+        <amenities rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wifi</amenities>
+        <area_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Colombo 3</area_name>
+        <distance_from_colombo_city rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2km</distance_from_colombo_city>
+        <lodge_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3-Star</lodge_type>
+        <number_of_rooms rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3</number_of_rooms>
+        <place_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cocobay</place_name>
+        <room_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Double</room_type>
+        <room_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Family</room_type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#lodge_3 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#lodge_3">
+        <rdf:type rdf:resource="http://tourism.rdf#Lodge"/>
+        <amenities rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kitchen</amenities>
+        <amenities rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wifi</amenities>
+        <area_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kandy</area_name>
+        <distance_from_colombo_city rdf:datatype="http://www.w3.org/2001/XMLSchema#string">160km</distance_from_colombo_city>
+        <lodge_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Semi-Luxury</lodge_type>
+        <number_of_rooms rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4</number_of_rooms>
+        <place_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kandy Lodge</place_name>
+        <province rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Central</province>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#nature_1 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#nature_1">
+        <rdf:type rdf:resource="http://tourism.rdf#Nature"/>
+        <attractive_with rdf:resource="http://tourism.rdf#attraction_1"/>
+        <attractive_with rdf:resource="http://tourism.rdf#attraction_2"/>
+        <area_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peradeniya</area_name>
+        <nature_attractions rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Diverse Flora</nature_attractions>
+        <nature_attractions rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Highlands</nature_attractions>
+        <nature_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gardern</nature_type>
+        <place_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Royal Botnical Gardern</place_name>
+        <province rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Central</province>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#nature_2 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#nature_2">
+        <rdf:type rdf:resource="http://tourism.rdf#Nature"/>
+        <entrance_fees rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Free</entrance_fees>
+        <nature_attractions rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Waterfall</nature_attractions>
+        <nature_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Park</nature_type>
+        <place_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Viharamaha Devi Park</place_name>
+        <province rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Western</province>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#nature_3 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#nature_3">
+        <rdf:type rdf:resource="http://tourism.rdf#Nature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#nature_4 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#nature_4">
+        <rdf:type rdf:resource="http://tourism.rdf#Nature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#nature_5 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#nature_5">
+        <rdf:type rdf:resource="http://tourism.rdf#Nature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#out_of_colombo_1 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#out_of_colombo_1">
+        <rdf:type rdf:resource="http://tourism.rdf#Out_of_Colombo"/>
+        <area_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kandy</area_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#out_of_colombo_2 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#out_of_colombo_2">
+        <rdf:type rdf:resource="http://tourism.rdf#Out_of_Colombo"/>
+        <area_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Galle</area_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#out_of_colombo_3 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#out_of_colombo_3">
+        <rdf:type rdf:resource="http://tourism.rdf#Out_of_Colombo"/>
+        <area_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dambulla</area_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#tourist_group_1 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#tourist_group_1">
+        <rdf:type rdf:resource="http://tourism.rdf#Tourist_Group"/>
+        <tourist_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Family</tourist_type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#tourist_group_2 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#tourist_group_2">
+        <rdf:type rdf:resource="http://tourism.rdf#Tourist_Group"/>
+        <tourist_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Couple</tourist_type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#tourist_group_3 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#tourist_group_3">
+        <rdf:type rdf:resource="http://tourism.rdf#Tourist_Group"/>
+        <tourist_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Children</tourist_type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#tourist_group_4 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#tourist_group_4">
+        <rdf:type rdf:resource="http://tourism.rdf#Tourist_Group"/>
+        <tourist_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Solo</tourist_type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#tourist_group_5 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#tourist_group_5">
+        <rdf:type rdf:resource="http://tourism.rdf#Tourist_Group"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#wild_life_photography_1 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#wild_life_photography_1">
+        <rdf:type rdf:resource="http://tourism.rdf#Wild_life_photography"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tourism.rdf#wild_life_photography_2 -->
+
+    <owl:NamedIndividual rdf:about="http://tourism.rdf#wild_life_photography_2">
+        <rdf:type rdf:resource="http://tourism.rdf#Wild_life_photography"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://tourism.rdf#Accomadation"/>
+            <rdf:Description rdf:about="http://tourism.rdf#Activity"/>
+            <rdf:Description rdf:about="http://tourism.rdf#Area"/>
+            <rdf:Description rdf:about="http://tourism.rdf#Event"/>
+            <rdf:Description rdf:about="http://tourism.rdf#Payment_method"/>
+            <rdf:Description rdf:about="http://tourism.rdf#Place"/>
+            <rdf:Description rdf:about="http://tourism.rdf#Price"/>
+            <rdf:Description rdf:about="http://tourism.rdf#Resturant"/>
+            <rdf:Description rdf:about="http://tourism.rdf#Tourist_Group"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://tourism.rdf#Apartment"/>
+            <rdf:Description rdf:about="http://tourism.rdf#Bungalow"/>
+            <rdf:Description rdf:about="http://tourism.rdf#Hotel"/>
+            <rdf:Description rdf:about="http://tourism.rdf#Lodge"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://tourism.rdf#Archaeology"/>
+            <rdf:Description rdf:about="http://tourism.rdf#Food"/>
+            <rdf:Description rdf:about="http://tourism.rdf#Nature"/>
+            <rdf:Description rdf:about="http://tourism.rdf#Night_life"/>
+            <rdf:Description rdf:about="http://tourism.rdf#Religious"/>
+            <rdf:Description rdf:about="http://tourism.rdf#Shopping"/>
+            <rdf:Description rdf:about="http://tourism.rdf#Wild_life"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://tourism.rdf#Average"/>
+            <rdf:Description rdf:about="http://tourism.rdf#Free"/>
+            <rdf:Description rdf:about="http://tourism.rdf#High"/>
+            <rdf:Description rdf:about="http://tourism.rdf#Low"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://tourism.rdf#Bird_watching"/>
+            <rdf:Description rdf:about="http://tourism.rdf#Gaming"/>
+            <rdf:Description rdf:about="http://tourism.rdf#Wild_life_photography"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://tourism.rdf#Bungalow"/>
+            <rdf:Description rdf:about="http://tourism.rdf#Hotel"/>
+            <rdf:Description rdf:about="http://tourism.rdf#Lodge"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://tourism.rdf#Chineese"/>
+            <rdf:Description rdf:about="http://tourism.rdf#Indian"/>
+            <rdf:Description rdf:about="http://tourism.rdf#International_food_chain"/>
+            <rdf:Description rdf:about="http://tourism.rdf#Local"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+
