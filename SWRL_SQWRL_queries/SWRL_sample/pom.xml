@@ -1,0 +1,149 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>swrl</groupId>
+  <artifactId>SWRL_sample</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>SWRL_sample</name>
+  <url>http://maven.apache.org</url>
+  
+  <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    
+    
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <swrlapi.version>2.0.6</swrlapi.version>
+        <swrlapi.drools.version>2.0.6</swrlapi.drools.version>
+  </properties>
+
+<repositories>
+        <repository>
+            <id>acrab.ics.muni.cz</id>
+            <name>Maven Repository</name>
+            <url>http://acrab.ics.muni.cz/~makub/m2repo/</url>
+            <layout>default</layout>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+        </repository>
+    </repositories>
+  <dependencies>
+  <dependency>
+    <groupId>org.apache.spark</groupId>
+    <artifactId>spark-core_2.12</artifactId>
+    <version>2.4.0</version>
+</dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    
+    <dependency>
+            <groupId>com.github.ansell.pellet</groupId>
+            <artifactId>pellet-query</artifactId>
+            <version>2.3.6-ansell</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.github.ansell.pellet</groupId>
+                    <artifactId>pellet-core</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>log4j</groupId>
+                    <artifactId>log4j</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-log4j12</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <dependency>
+            <groupId>pellet</groupId>
+            <artifactId>pellet-core</artifactId>
+            <version>2.2.2</version>
+        </dependency>
+        <dependency>
+            <groupId>pellet</groupId>
+            <artifactId>pellet-datatypes</artifactId>
+            <version>2.2.2</version>
+        </dependency>
+        <dependency>
+            <groupId>pellet</groupId>
+            <artifactId>pellet-el</artifactId>
+            <version>2.2.2</version>
+        </dependency>
+        <dependency>
+            <groupId>pellet</groupId>
+            <artifactId>pellet-rules</artifactId>
+            <version>2.2.2</version>
+        </dependency>
+        <dependency>
+            <groupId>pellet</groupId>
+            <artifactId>pellet-owlapiv3</artifactId>
+            <version>2.2.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.antlr</groupId>
+            <artifactId>antlr-runtime</artifactId>
+            <version>3.2</version>
+        </dependency>
+        <dependency>
+            <groupId>aterm</groupId>
+            <artifactId>aterm</artifactId>
+            <version>1.6</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.relaxng</groupId>
+            <artifactId>relaxngDatatype</artifactId>
+            <version>2011.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jgrapht</groupId>
+            <artifactId>jgrapht-jdk1.5</artifactId>
+            <version>0.7.3</version>
+        </dependency>
+
+        <dependency>
+            <groupId>net.sourceforge.owlapi</groupId>
+            <artifactId>owlapi-distribution</artifactId>
+            <version>4.2.3</version>
+        </dependency>
+        <dependency>
+            <groupId>edu.stanford.swrl</groupId>
+            <artifactId>swrlapi</artifactId>
+            <version>${swrlapi.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>edu.stanford.swrl</groupId>
+            <artifactId>swrlapi-drools-engine</artifactId>
+            <version>${swrlapi.drools.version}</version>
+        </dependency>
+    
+    
+  </dependencies>
+
+</project>
